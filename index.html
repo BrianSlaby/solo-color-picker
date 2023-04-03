@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Color Scheme Generator</h1>
+        </header>
+
+        <main>
+            <div class="container" id="main-container">
+                <div id="form-container">
+                    <form id="color-form">
+                        <input type="color" id="color-input">
+                        <select id="color-schemes" name="color-schemes">
+                            <option value="monochrome">Monochrome</option>
+                            <option value="monochrome-dark">Monochrome-Dark</option>
+                            <option value="monochrome-light">Monochrome-Light</option>
+                            <option value="analogic">Analogic</option>
+                            <option value="complement">Complement</option>
+                            <option value="analogic-complement">Analogic-Complement</option>
+                            <option value="triad">Triad</option>
+                            <option value="quad">Quad</option>
+                        </select>
+                        <button type="submit" class="form-btn" id="get-color-btn">Get color scheme</button>
+                    </form>
+                </div>
+    
+                <div id="results-container">
+    
+                </div>
+            </div>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>

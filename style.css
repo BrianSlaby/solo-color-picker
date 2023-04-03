@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #374151;
+}
+
+header {
+    background-color: #1c1c1c;
+    background-image: linear-gradient(
+        115deg,
+        hsl(187deg 100% 25%) 0%,
+        hsl(194deg 91% 28%) 10%,
+        hsl(202deg 87% 30%) 20%,
+        hsl(210deg 85% 31%) 30%,
+        hsl(218deg 84% 32%) 40%,
+        hsl(229deg 82% 34%) 50%,
+        hsl(245deg 61% 37%) 60%,
+        hsl(257deg 64% 35%) 70%,
+        hsl(267deg 69% 33%) 80%,
+        hsl(277deg 76% 30%) 90%,
+        hsl(286deg 100% 25%) 100%
+    );
+    color: #FFFDFE;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+#main-container {
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #FFFDFE;
+}
+
+/* =================== */
+/*        FORM         */
+/* =================== */
+
+#color-form {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#color-input {
+    height: 35px;
+    width: 55px;
+    background-color: #D1D5DB;
+    border: 0.5px solid #313131;
+}
+
+#color-schemes {
+    padding: 0.7em 1em;
+    border: solid 1px #D1D5DB;
+    border-radius: 4px;
+    background-color: #FFF;
+}
+
+.color-schemes:hover,
+.color-schemes:focus {
+    cursor: pointer;
+}
+
+.form-btn {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #374151;
+    border: solid 1px #D1D5DB;
+    border-radius: 4px;
+    background-color: #FFF;
+    padding: 0.9em;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #374151;
+}
+
+/* =================== */
+/*      RESULTS        */
+/* =================== */
+
+#results-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.color-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.color-sample {
+    height: 410px;
+}
+
+.color-hex {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-align: center;
+}
